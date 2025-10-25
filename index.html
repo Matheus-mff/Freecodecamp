@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dragon Quest Survey</title>
+    </head>
 
+     <!-- Header -->    
+<body>
+  <header>
+   <h1 id="title">Dragon Quest Survey</h1>
+   <p id="description">Thank you for helping create the future of Dragon Quest</p>
+   </header>
+<main>
+  <div class="container">
+   <form id="survey-form">
+
+     <!-- Users information -->
+<section>
+  <fieldset>
+    <legend>Your information</legend>
+
+  <label id="name-label" for="name">Name</label>
+  <input id="name" type="text" required placeholder="Enter your name" >
+
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" required placeholder="email" >
+
+  <label id="number-label" for="number">Age</label>
+  <input id="number" type="number" min="12" max="120" placeholder="number">
+</fieldset>
+</section>
+
+<!-- Favorite Dragon Quest (Select) -->
+<section>
+  <label id="Best-Dragon-Quest" for="dropdown">What's your favorite Dragon Quest Game?</label>
+<select id="dropdown">
+  <option value="">(Select one)</option>
+  <option value="1">Dragon Quest III</option>
+  <option value="2">Dragon Quest IV</option>
+  <option value="3">Dragon Quest V</option>
+  <option value="4">Dragon Quest VIII</option>
+  <option value="5">Dragon Quest XI</option>
+  </select>
+  </section>
+
+<!-- Radio buttons -->
+<section>
+<fieldset>
+  <legend>What platform do you prefer to play?</legend>
+
+   <label for="playstation">
+     <input type="radio" id="playstation" name="gaming-platform" value="playstation" required >Playstation</label>
+
+    <label for="nintendo">
+      <input type="radio" id="nintendo" name="gaming-platform" value="nintendo" required >Nintendo</label>
+      
+   <label for="pc">
+       <input type="radio" id="pc" name="gaming-platform" value="pc" required >PC</label>
+
+</fieldset>
+</section>
+  
+  <!-- checkbox -->
+<section>
+ <fieldset>
+  <legend>Which game should be remake?</legend>
+
+  <label for="dq3">
+      <input type="checkbox" id="dq3" name="remake" value="dq3" required >Dragon Quest III</label>
+      
+  <label for="dq4">
+        <input type="checkbox" id="dq4" name="remake" value="dq4" >Dragon Quest IV</label>
+        
+  <label for="dq5">
+    <input type="checkbox" id="dq5" name="remake" value="dq5" >Dragon Quest V</label>
+    
+  <label for="dq8" >
+    <input type="checkbox" id="dq8" name="remake" value="dq8" >Dragon Quest VIII</label>
+    
+  <label for="dq11">
+    <input type="checkbox" id="dq11" name="remake" value="dq11" >Dragon Quest XI</label>
+ 
+ </fieldset> 
+ </section>
+
+ <!-- text area -->
+<section>
+<fieldset>
+  <legend>Any comments or suggestions?</legend>
+  <label for="comments">
+    <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="8" cols="50"></textarea>
+    </label>
+</fieldset>
+</section>
+
+ <!-- submit part -->
+<button id="submit" type="submit">Submit</button>
+
+</form>
+</div>
+</main>
+
+<footer>
+  <p>Survey Inspired by Dragon Quest series.</p>
+  </footer>
+
+ </body>
+ </html>
