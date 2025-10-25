@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif; 
+  background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url(https://i.redd.it/heres-some-4k-8k-upscaled-wallpaper-of-the-trilogy-artwork-v0-3icmwp6lmd7d1.jpg?width=3840&format=pjpg&auto=webp&s=064af6f218814ddd03140d86fba3fa430e8d6b83); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(https://i.redd.it/heres-some-4k-8k-upscaled-wallpaper-of-the-trilogy-artwork-v0-3icmwp6lmd7d1.jpg?width=3840&format=pjpg&auto=webp&s=064af6f218814ddd03140d86fba3fa430e8d6b83) center/cover no-repeat;
+  filter: blur(3px) brightness(0.5); 
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-bottom: 3px solid #f4d03f;*/
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #f4d03f;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #f9e79f;
+}
+
+main .container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7); 
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 2px solid #f4d03f;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 2px solid #f4d03f;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  color: #f9e79f;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f4d03f;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background-color: #f9e79f;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #f9e79f;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  main .container {
+    padding: 1rem;
+  }
+
+  #submit {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
